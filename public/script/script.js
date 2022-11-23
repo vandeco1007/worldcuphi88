@@ -14,3 +14,4 @@ choices.forEach((choice)=>{
 score.forEach((score)=>{
     score.value=0
 })
+
