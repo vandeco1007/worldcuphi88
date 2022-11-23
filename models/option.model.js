@@ -16,10 +16,6 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    team1Status:{
-        type:String,
-        required:true
-    },
     matchStatus2:{
         type:String,
         require:true
@@ -33,10 +29,6 @@ const matchoption = mongoose.Schema({
         required:true
     },
     team2Image:{
-        type:String,
-        required:true
-    },
-    team2Status:{
         type:String,
         required:true
     },
@@ -56,10 +48,6 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    team3Status:{
-        type:String,
-        required:true
-    },
     matchStatus4:{
         type:String,
         require:true
@@ -73,10 +61,6 @@ const matchoption = mongoose.Schema({
         required:true
     },
     team4Image:{
-        type:String,
-        required:true
-    },
-    team4Status:{
         type:String,
         required:true
     },
@@ -96,10 +80,6 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    team5Status:{
-        type:String,
-        required:true
-    },
     matchStatus6:{
         type:String,
         require:true
@@ -113,10 +93,6 @@ const matchoption = mongoose.Schema({
         required:true
     },
     team6Image:{
-        type:String,
-        required:true
-    },
-    team6Status:{
         type:String,
         required:true
     },
@@ -136,10 +112,6 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    team7Status:{
-        type:String,
-        required:true
-    },
     matchStatus8:{
         type:String,
         require:true
@@ -153,10 +125,6 @@ const matchoption = mongoose.Schema({
         required:true
     },
     team8Image:{
-        type:String,
-        required:true
-    },
-    team8Status:{
         type:String,
         required:true
     }
