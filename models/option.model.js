@@ -16,14 +16,6 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    matchStatus2:{
-        type:String,
-        require:true
-    },
-    starTime2:{
-        type:String,
-        required:true
-    },
     team2Name:{
         type:String,
         required:true
@@ -32,11 +24,11 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    matchStatus3:{
+    matchStatus2:{
         type:String,
         require:true
     },
-    starTime3:{
+    starTime2:{
         type:String,
         required:true
     },
@@ -48,14 +40,6 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    matchStatus4:{
-        type:String,
-        require:true
-    },
-    starTime4:{
-        type:String,
-        required:true
-    },
     team4Name:{
         type:String,
         required:true
@@ -64,11 +48,11 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    matchStatus5:{
+    matchStatus3:{
         type:String,
         require:true
     },
-    starTime5:{
+    starTime3:{
         type:String,
         required:true
     },
@@ -80,14 +64,6 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    matchStatus6:{
-        type:String,
-        require:true
-    },
-    starTime6:{
-        type:String,
-        required:true
-    },
     team6Name:{
         type:String,
         required:true
@@ -96,11 +72,11 @@ const matchoption = mongoose.Schema({
         type:String,
         required:true
     },
-    matchStatus7:{
+    matchStatus4:{
         type:String,
         require:true
     },
-    starTime7:{
+    starTime4:{
         type:String,
         required:true
     },
@@ -109,14 +85,6 @@ const matchoption = mongoose.Schema({
         required:true
     },
     team7Image:{
-        type:String,
-        required:true
-    },
-    matchStatus8:{
-        type:String,
-        require:true
-    },
-    starTime8:{
         type:String,
         required:true
     },
