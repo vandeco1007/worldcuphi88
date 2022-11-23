@@ -1,5 +1,5 @@
 const matchscore = require('../models/matchscore.model')
-const matchoption = require('../models/option.controller')
+const matchoption = require('../models/option.model')
 
 module.exports = async(req,res,next)=>{
     let {...body} = req.body

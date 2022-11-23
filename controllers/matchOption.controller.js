@@ -1,10 +1,9 @@
-const matchoption = require('../models/option.controller')
+const matchoption = require('../models/option.model')
 
 module.exports = {
     getOption: async(req,res,next)=>{
         try {
             let option = await matchoption.find()
-            console.log(option[0])
             res.json(option[0])
         } catch (error) {
             res.json(error)
