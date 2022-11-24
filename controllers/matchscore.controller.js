@@ -5,6 +5,7 @@ module.exports = async(req,res,next)=>{
     let {...body} = req.body
     try {
         let checklist = await matchscore.findOne({ 'playerId': body.playerId })
+        console.log(checklist)
         if(!checklist){
             let choice = await option.find()
             let choiceValue = choice[0]
@@ -27,7 +28,7 @@ module.exports = async(req,res,next)=>{
                 if(body.team1score==''){
                     result1[0] = checklist.result1
                 }else{
-                    result1[0] = "Morocco: "+body.team1score+" - "+body.team2score+" Croatia"
+                    result1[0] = choiceValue.team1Name+" "+body.team1score+" - "+body.team2score+" "+choiceValue.team2Name
                 }
             }
 //----------Team 2 ------------------//
@@ -38,7 +39,7 @@ module.exports = async(req,res,next)=>{
                 if(body.team3score==''){
                     result2[0] = checklist.result2
                 }else{
-                    result2[0] = "Đức "+body.team3score+" - "+body.team4score+" Nhật Bản"
+                    result2[0] = choiceValue.team3Name+" "+body.team3score+" - "+body.team4score+" "+choiceValue.team4Name
                 }
             }
 //--------------Team 3----------------/
@@ -49,7 +50,7 @@ module.exports = async(req,res,next)=>{
                 if(body.team5score==''){
                     result3[0] = checklist.result3
                 }else{
-                    result3[0] = "Tây Ban Nha "+body.team5score+" - "+body.team6score+" Costa Rica"
+                    result3[0] = choiceValue.team5Name+" "+body.team5score+" - "+body.team6score+" "+choiceValue.team6Name
                 }
             }
 
@@ -62,7 +63,7 @@ module.exports = async(req,res,next)=>{
                 if(body.team7score==''){
                     result4[0] = checklist.result4
                 }else{
-                    result4[0] = "Bỉ "+body.team7score+" - "+body.team8score+" Canada"
+                    result4[0] = choiceValue.team7Name+" "+body.team7score+" - "+body.team8score+" "+choiceValue.team8Name
                 }
             }
 
